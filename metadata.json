@@ -1,0 +1,6 @@
+{
+  "name": "CocoaCycle - Platform Rantai Pasok Kulit Kakao B2B",
+  "description": "Platform digital rantai pasok dan ekonomi sirkular kakao: menghubungkan pasokan kulit kakao segar petani dengan pembeli industri berbahan baku organik terukur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
