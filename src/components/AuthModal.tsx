@@ -142,7 +142,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         <div className="md:w-5/12 bg-[#234A38] text-white p-8 flex flex-col justify-between relative overflow-hidden">
           <div className="absolute inset-0 opacity-15 pointer-events-none">
             <img
-              src="/src/assets/images/plantation_farmers_1791721253446.jpg"
+              src="/images/plantation_farmers.jpg"
               alt="Perkebunan Kakao"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -253,16 +253,15 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div>
                   <div className="flex justify-between items-center mb-1">
                     <label className="text-xs font-semibold text-[#38251F]">Password</label>
-                    <a
-                      href="#forgot"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        alert('Silakan hubungi admin CocoaCycle untuk reset password demo.');
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setErrorMessage('Gunakan password demo: password123 atau pilih akun demo di samping.');
                       }}
-                      className="text-xs text-[#234A38] hover:underline"
+                      className="text-xs text-[#234A38] hover:underline cursor-pointer"
                     >
                       Lupa password?
-                    </a>
+                    </button>
                   </div>
                   <div className="relative">
                     <input

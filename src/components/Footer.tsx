@@ -64,12 +64,12 @@ export const Footer: React.FC = () => {
             </p>
           </div>
           <div className="flex gap-4 shrink-0">
-            <a href="#privacy" onClick={(e) => { e.preventDefault(); alert('Kebijakan Privasi Kemitraan Petani & B2B CocoaCycle'); }} className="hover:text-white transition-colors">
+            <span className="hover:text-white transition-colors cursor-pointer">
               Kebijakan Privasi
-            </a>
-            <a href="#terms" onClick={(e) => { e.preventDefault(); alert('Ketentuan Layanan Timbang & Penjualan CocoaCycle'); }} className="hover:text-white transition-colors">
+            </span>
+            <span className="hover:text-white transition-colors cursor-pointer">
               Syarat & Ketentuan
-            </a>
+            </span>
           </div>
         </div>
       </div>

@@ -619,7 +619,7 @@ export const INITIAL_GRADE_CONFIGS: ProductGradeConfig[] = [
     minOrderKg: 50,
     recommendedUse: 'Formulator pembenah tanah, pupuk organik granul premium, pembeli dengan syarat kadar air terukur dan mutu seragam.',
     availableStockKg: 76,
-    image: '/src/assets/images/product_grade_a_1791721204259.jpg',
+    image: '/images/product_grade_a.jpg',
   },
   {
     grade: 'Grade B',
@@ -631,7 +631,7 @@ export const INITIAL_GRADE_CONFIGS: ProductGradeConfig[] = [
     minOrderKg: 100,
     recommendedUse: 'Produsen kompos dan pupuk organik, campuran fermentasi media tanam hortikultura, pesanan berulang pengiriman terjadwal.',
     availableStockKg: 180,
-    image: '/src/assets/images/product_grade_b_1791721217437.jpg',
+    image: '/images/product_grade_b.jpg',
   },
   {
     grade: 'Grade C',
@@ -643,6 +643,6 @@ export const INITIAL_GRADE_CONFIGS: ProductGradeConfig[] = [
     minOrderKg: 150,
     recommendedUse: 'Produsen kompos curah, mulsa perkebunan, bahan baku pirolisis biochar awal.',
     availableStockKg: 450,
-    image: '/src/assets/images/product_grade_c_1791721233482.jpg',
+    image: '/images/product_grade_c.jpg',
   },
 ];

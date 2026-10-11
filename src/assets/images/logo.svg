@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" fill="none">
+  <!-- Circular Arrow Loop -->
+  <g transform="translate(250, 110)">
+    <!-- Top-Right Forest Green Arrow Arc -->
+    <path d="M -50 -55 A 80 80 0 0 1 70 20" stroke="#234A38" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <path d="M 68 20 L 78 -8 L 52 14 Z" fill="#234A38"/>
+
+    <!-- Bottom-Left Deep Cocoa Brown Arrow Arc -->
+    <path d="M 50 55 A 80 80 0 0 1 -70 -20" stroke="#38251F" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <path d="M -68 -20 L -78 8 L -52 -14 Z" fill="#38251F"/>
+
+    <!-- Center Cocoa Pod (angled ~35 deg) -->
+    <g transform="rotate(-30)">
+      <!-- Pod Outer Shell -->
+      <path d="M 0 -48 C 22 -35 26 28 0 48 C -26 28 -22 -35 0 -48 Z" fill="#38251F"/>
+      <!-- Inner pod cavity line -->
+      <path d="M 0 -40 C 16 -28 18 22 0 40 C -18 22 -16 -28 0 -40 Z" fill="#281813"/>
+      
+      <!-- Beans array -->
+      <ellipse cx="0" cy="-24" rx="7" ry="4.5" fill="#FFFFFF" transform="rotate(-15 0 -24)"/>
+      <ellipse cx="0" cy="-12" rx="7.5" ry="4.5" fill="#FFFFFF" transform="rotate(-15 0 -12)"/>
+      <ellipse cx="0" cy="0" rx="8" ry="5" fill="#FFFFFF" transform="rotate(-15 0 0)"/>
+      <ellipse cx="0" cy="12" rx="7.5" ry="4.5" fill="#FFFFFF" transform="rotate(-15 0 12)"/>
+      <ellipse cx="0" cy="24" rx="7" ry="4.5" fill="#FFFFFF" transform="rotate(-15 0 24)"/>
+    </g>
+
+    <!-- Leaf overlapping bottom right -->
+    <g transform="translate(18, 12) rotate(42)">
+      <path d="M 0 -36 C 22 -20 22 22 0 38 C -22 22 -22 -20 0 -36 Z" fill="#586E38"/>
+      <!-- Leaf center vein -->
+      <path d="M 0 -32 L 0 34" stroke="#778F4A" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="250" y="275" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="52" letter-spacing="-1">
+    <tspan fill="#38251F">Cocoa</tspan><tspan fill="#234A38">Cycle</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="250" y="315" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="16" fill="#38251F" letter-spacing="0.2">
+    Dari Limbah Kebun Menjadi Bahan Baku Bermutu.
+  </text>
+</svg>

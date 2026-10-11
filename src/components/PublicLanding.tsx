@@ -26,7 +26,7 @@ export const PublicLanding: React.FC<PublicLandingProps> = ({ onOpenAuth }) => {
   const { gradeConfigs, batches, receipts } = useApp();
   const [selectedProductModal, setSelectedProductModal] = useState<ProductGradeConfig | null>(null);
 
-  const heroImage = '/src/assets/images/hero_cocoa_processing_1791721191390.jpg';
+  const heroImage = '/images/hero_cocoa_processing.jpg';
 
   // Demo active batch for Section 6 Traceability card
   const demoBatch = batches[0] || {
@@ -339,35 +339,49 @@ export const PublicLanding: React.FC<PublicLandingProps> = ({ onOpenAuth }) => {
             ))}
 
             {/* R&D Biochar Card */}
-            <div className="bg-white rounded-2xl border border-dashed border-[#84936A] overflow-hidden flex flex-col justify-between p-5 space-y-4">
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center">
-                    <FlaskConical className="w-5 h-5" />
+            <div className="bg-white rounded-2xl border border-dashed border-[#84936A] overflow-hidden flex flex-col justify-between hover:shadow-md transition-all group">
+              <div>
+                <div className="relative aspect-4/3 overflow-hidden bg-slate-900">
+                  <img
+                    src="/images/product_biochar.jpg"
+                    alt="Biochar Kulit Kakao"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute top-3 left-3 bg-[#234A38] text-white text-xs font-bold px-2.5 py-1 rounded-md">
+                    Lini B (Tahun 3)
                   </div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100/70 px-2.5 py-0.5 rounded-full">
-                    Tahap Pengembangan
-                  </span>
+                  <div className="absolute bottom-3 right-3 bg-white/95 text-amber-900 text-[11px] font-mono font-semibold px-2 py-0.5 rounded shadow-xs">
+                    Target Rp 4.300/kg
+                  </div>
                 </div>
 
-                <h4 className="font-bold text-base text-[#38251F]">Biochar Kulit Kakao (R&D)</h4>
-                <p className="text-xs text-[#282A27]/75 leading-relaxed">
-                  Pengolahan pirolisis lambat suhu tinggi untuk menghasilkan pembenah tanah dengan retensi hara
-                  tinggi dan fiksasi karbon stabil.
-                </p>
+                <div className="p-5 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h4 className="font-bold text-sm text-[#38251F]">Biochar Kulit Kakao B2B</h4>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+                      Riset & R&D
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#282A27]/75 leading-relaxed line-clamp-3">
+                    Pirolisis suhu terkontrol untuk menghasilkan pembenah tanah berkadar karbon tinggi, porositas mikroskopis unggul, dan fiksasi hara stabil.
+                  </p>
 
-                <div className="p-3 bg-[#F7F4ED] rounded-xl text-[11px] text-[#282A27]/70 space-y-1">
-                  <p>· Status: Pengujian kapasitas tukar kation</p>
-                  <p>· Belum tersedia untuk pemesanan komersial</p>
+                  <div className="p-3 bg-[#F7F4ED] rounded-xl text-[11px] text-[#282A27]/70 space-y-1">
+                    <p>· Alokasi bertahap: 5% volume di Tahun 3</p>
+                    <p>· Sesuai standar rancangan asosiasi ABII & IDSurvey</p>
+                  </div>
                 </div>
               </div>
 
-              <button
-                disabled
-                className="w-full py-2.5 px-3 bg-slate-100 text-slate-400 rounded-xl text-xs font-semibold cursor-not-allowed text-center"
-              >
-                Dalam Uji Laboratorium
-              </button>
+              <div className="p-5 pt-0">
+                <button
+                  disabled
+                  className="w-full py-2.5 px-3 bg-slate-100 text-slate-500 rounded-xl text-xs font-semibold cursor-not-allowed text-center"
+                >
+                  Pengembangan Lini Lanjutan
+                </button>
+              </div>
             </div>
           </div>
         </div>

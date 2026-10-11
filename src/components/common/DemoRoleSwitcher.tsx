@@ -10,7 +10,7 @@ export const DemoRoleSwitcher: React.FC = () => {
     <div className="fixed bottom-4 right-4 z-40 text-xs">
       {/* Expanded panel */}
       {isExpanded && (
-        <div className="mb-2 p-3 bg-white/95 backdrop-blur-md rounded-2xl border border-[#EAE3D6] shadow-xl text-[#282A27] w-72 animate-in fade-in slide-in-from-bottom-2 duration-150">
+        <div className="mb-2 p-3 bg-white/95 backdrop-blur-md rounded-2xl border border-[#EAE3D6] shadow-xl text-[#282A27] w-72 max-w-[calc(100vw-2rem)] animate-in fade-in slide-in-from-bottom-2 duration-150">
           <div className="flex items-center justify-between pb-2 mb-2 border-b border-[#EAE3D6]">
             <span className="font-semibold text-[#38251F]">Simulasi Demo Role</span>
             <button

@@ -542,14 +542,17 @@ export const BatchProductionView: React.FC<{ onNavigateToQC: () => void }> = ({ 
   const [driedWeight, setDriedWeight] = useState('');
   const [stepNotes, setStepNotes] = useState('');
 
+  const [batchError, setBatchError] = useState('');
+
   const totalInputWeight = receipts
     .filter((r) => selectedReceiptIds.includes(r.id))
     .reduce((a, b) => a + b.netWeightKg, 0);
 
   const handleCreateBatch = (e: React.FormEvent) => {
     e.preventDefault();
+    setBatchError('');
     if (selectedReceiptIds.length === 0) {
-      alert('Pilih minimal satu penerimaan bahan baku terkonfirmasi.');
+      setBatchError('Pilih minimal satu penerimaan bahan baku terkonfirmasi.');
       return;
     }
     createBatch(totalInputWeight, selectedReceiptIds, supervisor, location);
@@ -740,6 +743,13 @@ export const BatchProductionView: React.FC<{ onNavigateToQC: () => void }> = ({ 
                   className="w-full px-3 py-2 rounded-xl border border-[#EAE3D6]"
                 />
               </div>
+
+              {batchError && (
+                <div className="p-3 bg-red-50 border border-red-200 text-red-700 rounded-xl text-xs flex items-center gap-2">
+                  <AlertCircle className="w-4 h-4 shrink-0" />
+                  <span>{batchError}</span>
+                </div>
+              )}
 
               <div className="pt-2 flex justify-end gap-3">
                 <button
